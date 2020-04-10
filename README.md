@@ -1,4 +1,4 @@
-# P systems models of COVID-19 propagation
+# P system models of COVID-19 propagation
 
 ## Context
 
@@ -18,10 +18,10 @@ propagation.
 
 ## Repository structure
 
-This repository contains one directory for each of the teams of the
-students.  Every directory contains the file `students.md` giving the
-list of the students of the corresponding teams, and will contain
-various other resources contributed by the students: textual
+This repository contains one directory for each of the teams of
+students.  Every directory contains the file `members.md` giving the
+list of the members of the corresponding team, and will contain
+various other resources contributed by the team: textual
 documentation,
 [P-Lingua](http://www.p-lingua.org/wiki/index.php/Main_Page) models,
 additional pre- or post-processing code, visualisation, etc.
@@ -31,13 +31,13 @@ additional pre- or post-processing code, visualisation, etc.
 ### Where to start
 
 **Step 1:** Designate an administrative head of each team.  The head
-will send up the list of GitHub accounts of each member to me by
-E-mail.  I will invite each member as a collaborator to this
+will send the list of GitHub accounts of each member to the teachers
+by E-mail.  We will invite each member as a collaborator to this
 repository.  This will give you almost full access rights to the
 repository, so some care will be needed to not break other people's
 work.  (It's easy to not break stuff, really.)
 
-**Step 2:** Add the names of the students to the file `students.md` to
+**Step 2:** Add the names of the members to the file `members.md` in
 the directory corresponding to your team.  This will help you remember
 what your teams are.
 
@@ -47,16 +47,16 @@ what your teams are.
 
 ### Contribution workflow
 
-Everyone will commit to `master`.  You can create your local branches
-and push them here for the members of your team to share, but don't
-forget to merge such branches into `master` often.
+Everyone will commit to `master`.  You may create your local branches
+and push them here, but don't forget to merge such branches into
+`master` often.
 
-Every team will only modify the files on the directory of this team.
+Every team will only modify the files in the corresponding directory.
 You can of course look at what the others are doing.
 
 Within the team, it is best to avoid multiple people modifying the
 same parts of the same file at once.  Such concurrent modifications
-usually lead to merge conflicts which maybe tricky to resolve.
+usually lead to merge conflicts which may be tricky to resolve.
 Multiple people may work on the same files at the same time
 seamlessly, provided that they modify *different* parts of those
 files.
@@ -90,7 +90,7 @@ key by hand, without relying on `xclip`.
 A commit corresponds to a logical block of your work which you can
 describe with a short sentence.  Commit often and keep the
 descriptions clear.  This will help you and your teammates debug your
-models.  The simplest way to commit all of your changes is the
+models.  The simplest way to commit all your local changes is the
 following command:
 
 ```
@@ -112,10 +112,10 @@ git push origin master
 
 The pull command brings the latest version of `master` from this
 repository (`origin`) and *merges* it with whatever you committed to
-`master` locally.  When you follow by a push, your changes will be
+`master` locally.  When you follow with a push, your changes will be
 merged back into `master` in this repository.  This ensures that the
 updates to `master` are always monotonic (fast-forward, in Git
-parlance.)
+parlance).
 
 #### GUIs and porcelains
 
@@ -125,7 +125,7 @@ interfaces](https://git-scm.com/downloads/guis) to Git and/or GitHub.
 If you like GNU Emacs, you may consider using
 [Magit](https://magit.vc/).
 
-## Resources
+### Resources
 
 1. [The Git Book](https://git-scm.com/book/en/v2) — If you don't have
    much experience with Git, I highly recommend that you glance
@@ -151,5 +151,4 @@ key by hand, without relying on `xclip`.
 One important thing to remember: Git is **not** GitHub.  GitHub is a
 Web resource based on Git and extending it with tons of new
 functionality.  Git on the other hand is a separate, stand-alone tool,
-which doesn't even need to be connected to a platform like GitHub (of
-which there are several).
+which doesn't even need to be connected to a platform like GitHub.
