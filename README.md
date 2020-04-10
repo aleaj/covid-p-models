@@ -30,29 +30,42 @@ additional pre- or post-processing code, visualisation, etc.
 
 ### Where to start
 
-**Step 1:** Designate an administrative head of each team.  The head
-will send the list of GitHub accounts of each member to the teachers
-by E-mail.  We will invite each member as a collaborator to this
-repository.  This will give you almost full access rights to the
-repository, so some care will be needed to not break other people's
-work.  (It's easy to not break stuff, really.)
+**Step 1:** Designate an administrative head of each team.
 
-**Step 2:** Add the names of the members to the file `members.md` in
-the directory corresponding to your team.  This will help you remember
-what your teams are.
+**Step 2:** The team head
+[forks](https://help.github.com/en/github/getting-started-with-github/fork-a-repo)
+the *central repository* (this one) to make the *team repository*.
+Every member of the team forks the team repository to make their own
+*personal repository*.
 
-**Step 3:** Every member of the team checks out the repository.
+**Step 3:** The team head adds the names of the members to the file
+`members.md` in the corresponding directory.
 
 **Step 4:** Contribute!
 
 ### Contribution workflow
 
-Everyone will commit to `master`.  You may create your local branches
-and push them here, but don't forget to merge such branches into
-`master` often.
+Every member of the team commits changes locally and pushes them to
+their personal repository.  Whenever they finish a logically
+independent subsection of their work, they submit a [pull
+request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests)
+to the team repository, which is merged by the team head.  The team
+head submits a pull request to the central repository whenever the
+team hits any minor milestone: model draft finished, P-Lingua model
+added, post-processing finished, etc.
 
-Every team will only modify the files in the corresponding directory.
-You can of course look at what the others are doing.
+You don't have to send pull requests after every single commit.  Team
+members should send a pull request to the team repository after about
+a day of work.  Team head should sent a pull request to the central
+repository approximately every 2–3 days.
+
+The teachers will take care of reviewing and merging team pull
+requests into the central repository.  You will not have direct access
+to the central repository, since any contribution can be done via a
+pull request.
+
+Every team will only modify the files in their directory.  You can of
+course look at what the others are doing.
 
 Within the team, it is best to avoid multiple people modifying the
 same parts of the same file at once.  Such concurrent modifications
@@ -63,18 +76,17 @@ files.
 
 Commit often and keep your commits small and localised.  This will
 reduce the risk of merge conflicts and will allow you to have a
-finer-grained history.  Push often so that your teammates can see what
-your progress is.
+finer-grained history.
 
 ### Git workflow
 
 #### Checking out
 
-Start by checking out this repository using a command similar to this
-one:
+Start by checking out your personal repository using a command similar
+to this one:
 
 ```
-git checkout git@github.com:scolobb/covid-p-models.git
+git checkout git@github.com:[your-username]/covid-p-models.git
 ```
 
 You will have to
@@ -89,33 +101,33 @@ key by hand, without relying on `xclip`.
 
 A commit corresponds to a logical block of your work which you can
 describe with a short sentence.  Commit often and keep the
-descriptions clear.  This will help you and your teammates debug your
-models.  The simplest way to commit all your local changes is the
-following command:
+descriptions clear.  This will help you and your teammates understand
+and debug your work.  The simplest way to commit all your local
+changes is the following command:
 
 ```
 git commit -a -m "Helpful commit message."
 ```
 
-#### Pushing (sharing your contributions)
+#### Pushing and pull requests
 
-Pushing is the operation by which the commits you contributed to a
-branch (e.g., `master`) get into the corresponding branch of this
-online repository.  To avoid overriding other people's changes (Git
-will normally not allow you to do that easily), I highly recommend
-doing a pull **before** every push, for example:
+Pushing is the operation by which the commits you added to a branch
+locally get into the corresponding branch in your personal repository.
+When you push to a branch, you can [create a pull
+request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request)
+from that branch to the team repository.
 
-```
-git pull origin master
-git push origin master
-```
+The team head may either create a fork of their team's repository and
+work as a regular member, using the team's repository to centralise
+everyone's pull requests, or they may commit directly to their team's
+repository.
 
-The pull command brings the latest version of `master` from this
-repository (`origin`) and *merges* it with whatever you committed to
-`master` locally.  When you follow with a push, your changes will be
-merged back into `master` in this repository.  This ensures that the
-updates to `master` are always monotonic (fast-forward, in Git
-parlance).
+The whole team should review the pull requests of the members to make
+sure everyone stays in sync with the team's current objectives.
+
+Whenever appropriate, the team head submits a pull request to the
+central repository.  The teachers will review and merge the pull
+request, which may also be reviewed by the members of the team.
 
 #### GUIs and porcelains
 
@@ -140,10 +152,14 @@ If you like GNU Emacs, you may consider using
    but it's probably a good idea.
 4. [Adding a new SSH key to your GitHub
    account](https://help.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account)
-   — Note that you can just open the
-`~/.ssh/id_rsa.pub` with a text editor and copy and paste the public
-key by hand, without relying on `xclip`.
-5. [To Git or Not to
+   — Note that you can just open `~/.ssh/id_rsa.pub` with a text
+   editor and copy and paste the public key by hand, without relying
+   on `xclip`.
+5. [About Pull
+   Requests](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests)
+   — A detailed presentation of different operations related to pull
+   requests: creating, reviewing, merging, etc.
+6. [To Git or Not to
    Git](https://www.ibisc.univ-evry.fr/~sivanov/content/courses/togit/togit.pdf)
    — An overly simplified explanation of some of the concepts behind
    Git.
