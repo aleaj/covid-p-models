@@ -145,7 +145,7 @@ If you like GNU Emacs, you may consider using
    Git.
 2. [The Git Book](https://git-scm.com/book/en/v2) — If you don't have
    much experience with Git, I highly recommend that you glance
-   through the first 5 chapters of this document.  The basic concepts
+   through the first 6 chapters of this document.  The basic concepts
    of Git are very simple, even if somewhat numerous, but a surprising
    number of "simplified" explanations get them wrong.
 3. [Hello World](https://guides.github.com/activities/hello-world/) —
