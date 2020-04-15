@@ -139,30 +139,30 @@ If you like GNU Emacs, you may consider using
 
 ### Resources
 
-1. [The Git Book](https://git-scm.com/book/en/v2) — If you don't have
+1. [To Git or Not to
+   Git](https://www.ibisc.univ-evry.fr/~sivanov/content/courses/togit/togit.pdf)
+   — An overly simplified explanation of some of the concepts behind
+   Git.
+2. [The Git Book](https://git-scm.com/book/en/v2) — If you don't have
    much experience with Git, I highly recommend that you glance
    through the first 5 chapters of this document.  The basic concepts
    of Git are very simple, even if somewhat numerous, but a surprising
    number of "simplified" explanations get them wrong.
-2. [Hello World](https://guides.github.com/activities/hello-world/) —
+3. [Hello World](https://guides.github.com/activities/hello-world/) —
    A hugely simplified explanation of how to work with GitHub.
-3. [Generating a new SSH key and adding it to the
+4. [Generating a new SSH key and adding it to the
    ssh-agent](https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
    — Note that you don't actually have to add the key to ssh-agent,
    but it's probably a good idea.
-4. [Adding a new SSH key to your GitHub
+5. [Adding a new SSH key to your GitHub
    account](https://help.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account)
    — Note that you can just open `~/.ssh/id_rsa.pub` with a text
    editor and copy and paste the public key by hand, without relying
    on `xclip`.
-5. [About Pull
+6. [About Pull
    Requests](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests)
    — A detailed presentation of different operations related to pull
    requests: creating, reviewing, merging, etc.
-6. [To Git or Not to
-   Git](https://www.ibisc.univ-evry.fr/~sivanov/content/courses/togit/togit.pdf)
-   — An overly simplified explanation of some of the concepts behind
-   Git.
    
 One important thing to remember: Git is **not** GitHub.  GitHub is a
 Web resource based on Git and extending it with tons of new
